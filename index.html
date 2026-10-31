@@ -8,6 +8,8 @@
   <meta property="og:title" content="🔧 보일러·가전 에러코드 3초 진단기 & 예상 수리비 계산기" />
   <meta property="og:description" content="기사님 부르기 전 출장비 3만 원 아끼는 공식 매뉴얼 진단기! 에러코드만 누르면 원인·수리비·자가해결법을 3초 만에 알려드립니다." />
   <meta property="og:type" content="website" />
+  <meta name="google-adsense-account" content="ca-pub-2618741697689590" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618741697689590" crossorigin="anonymous"></script>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -49,13 +51,18 @@
   <!-- Top Header -->
   <header class="glass-header text-white pt-7 pb-8 px-4 shadow-lg">
     <div class="max-w-2xl mx-auto">
-      <div class="flex items-center justify-between mb-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
         <span class="inline-flex items-center gap-1.5 bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full">
           <span>✅</span> 제조사 공식 매뉴얼 & 한전 요금표 100% 기반
         </span>
-        <button onclick="copyShareUrl()" class="text-xs bg-white/10 hover:bg-white/20 text-slate-200 px-3 py-1.5 rounded-lg transition flex items-center gap-1">
-          🔗 공유하기
-        </button>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full">
+            🟢 오늘 <span id="todayVisitors">1</span>명 · 누적 <span id="totalVisitors">1</span>명 이용
+          </span>
+          <button onclick="copyShareUrl()" class="text-xs bg-white/10 hover:bg-white/20 text-slate-200 px-3 py-1 rounded-lg transition flex items-center gap-1">
+            🔗 공유
+          </button>
+        </div>
       </div>
       <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug">
         🔧 전 국민 보일러·가전 <span class="text-blue-400">3초 진단기</span>
@@ -176,6 +183,23 @@
               <span id="resTelText">📞 고객센터 1588-1144</span>
             </a>
           </div>
+
+          <!-- Context-Aware Native Shopping / Affiliate Ad Card -->
+          <div id="nativeAdCard" class="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 rounded-xl p-4 border-2 border-amber-300/80 shadow-sm">
+            <div class="flex items-center justify-between mb-1.5">
+              <span id="adBadge" class="text-[11px] font-extrabold bg-amber-500 text-white px-2 py-0.5 rounded">🔥 난방비·수리비 절약 필수템</span>
+              <span class="text-[10px] text-slate-400">추천 쇼핑 정보</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h5 id="adTitle" class="text-sm font-extrabold text-slate-900">창문 외풍차단 방풍비닐·문풍지 & 초절전 탄소매트 모음</h5>
+                <p id="adDesc" class="text-xs text-slate-600 mt-0.5">보일러 가동 시간을 절반으로 줄여 가스비를 월 5만 원 이상 아껴주는 베스트셀러</p>
+              </div>
+              <a id="adLink" href="https://www.coupang.com/np/search?q=%EB%8B%A8%EC%97%B4%EB%BD%81%EB%BD%81%EC%9D%B4+%EB%AC%B8%ED%92%8D%EC%A7%80" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center gap-1 bg-rose-600 hover:bg-rose-500 text-white text-xs font-extrabold px-4 py-2.5 rounded-xl shadow transition whitespace-nowrap">
+                <span id="adBtnText">🛒 로켓배송 최저가 확인 ↗</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -246,6 +270,15 @@
             </div>
           </div>
           <p id="elecAdvice" class="text-xs sm:text-sm text-slate-200 leading-relaxed bg-white/10 p-3.5 rounded-xl"></p>
+          <div class="bg-amber-500/20 border border-amber-400/40 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div class="text-xs font-extrabold text-amber-300">⚡ 누진세 걱정 없는 하루 100원대 초절전 난방템</div>
+              <div class="text-xs text-slate-200 mt-0.5">일반 히터 대비 전기세 90% 절감! 전자파 안심 워셔블 탄소매트 인기 순위</div>
+            </div>
+            <a href="https://www.coupang.com/np/search?q=%EC%B4%88%EC%A0%88%EC%A0%84+%ED%83%84%EC%86%8C%EB%A7%A4%ED%8A%B8" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+              🛒 최저가 비교하기 ↗
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -295,6 +328,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Google AdSense Responsive Display Slot -->
+    <div class="mt-5 bg-white rounded-2xl p-3 shadow-sm border border-slate-200/80 text-center overflow-hidden">
+      <div class="text-[10px] text-slate-400 mb-1">SPONSORED AD</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2618741697689590"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+      </script>
+    </div>
 
     <!-- Bottom Blog & Guide Banner -->
     <div class="mt-6 bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -731,6 +777,57 @@
     let timerInterval = null;
     let timeLeft = 60;
 
+    const BRAND_ADS = {
+      navien: {
+        badge: "🔥 보일러 난방비 30% 절약 필수템",
+        title: "창문 틈새 외풍차단 문풍지·단열뽁뽁이 & 초절전 탄소매트",
+        desc: "보일러 가동 시간을 절반으로 줄여 겨울 가스비를 월 5만 원 이상 아껴주는 인기템",
+        url: "https://www.coupang.com/np/search?q=%EC%B0%BD%EB%AC%B8+%EC%99%B8%ED%92%8D%EC%B0%A8%EB%8B%A8+%EB%AC%B8%ED%92%8D%EC%A7%80"
+      },
+      kiturami: {
+        badge: "🔥 보일러 난방비 30% 절약 필수템",
+        title: "창문 틈새 외풍차단 문풍지·단열뽁뽁이 & 초절전 탄소매트",
+        desc: "외풍만 막아도 실내 온도가 2.5℃ 상승! 보일러 가동 횟수를 확 줄여줍니다.",
+        url: "https://www.coupang.com/np/search?q=%EC%B0%BD%EB%AC%B8+%EC%99%B8%ED%92%8D%EC%B0%A8%EB%8B%A8+%EB%AC%B8%ED%92%8D%EC%A7%80"
+      },
+      rinnai: {
+        badge: "🔥 보일러 동파·난방비 절약 필수템",
+        title: "보일러 배관 보온재·열선 & 창문 방풍비닐 특가 모음",
+        desc: "영하 한파 동파 예방과 난방비 절약을 동시에 해결하는 겨울 살림 필수템",
+        url: "https://www.coupang.com/np/search?q=%EB%B0%A9%ED%92%8D%EB%B9%84%EB%8B%90+%EB%AC%B8%ED%92%8D%EC%A7%80"
+      },
+      daesung: {
+        badge: "🔥 보일러 난방비 30% 절약 필수템",
+        title: "창문 틈새 외풍차단 문풍지·단열뽁뽁이 & 초절전 탄소매트",
+        desc: "보일러 가동 시간을 절반으로 줄여 겨울 가스비를 월 5만 원 이상 아껴주는 인기템",
+        url: "https://www.coupang.com/np/search?q=%EC%B0%BD%EB%AC%B8+%EC%99%B8%ED%92%8D%EC%B0%A8%EB%8B%A8+%EB%AC%B8%ED%92%8D%EC%A7%80"
+      },
+      lg_wash: {
+        badge: "🧺 세탁기 에러·악취 예방 1위템",
+        title: "배수구 물때·곰팡이 싹 녹이는 발포 세탁조 클리너 & 거름망 솔",
+        desc: "OE 배수 에러와 쉰내 원인을 한 번에 세척하는 드럼세탁기 전용 클리너",
+        url: "https://www.coupang.com/np/search?q=%EB%93%9C%EB%9F%BC+%EC%84%B8%ED%83%81%EC%A1%B0+%ED%81%B4%EB%A6%AC%EB%84%88"
+      },
+      samsung_wash: {
+        badge: "🫧 세탁기 에러·악취 예방 1위템",
+        title: "배수구 물때·곰팡이 싹 녹이는 발포 세탁조 클리너 & 세탁망 세트",
+        desc: "4C/5C 에러 예방과 세탁조 찌든 때 제거를 위한 베스트셀러 모음",
+        url: "https://www.coupang.com/np/search?q=%EB%93%9C%EB%9F%BC+%EC%84%B8%ED%83%81%EC%A1%B0+%ED%81%B4%EB%A6%AC%EB%84%88"
+      },
+      cuckoo: {
+        badge: "🍚 밥맛 복원 & 증기 누출 해결",
+        title: "쿠쿠 전기압력밥솥 정품 고무패킹 (6인용/10인용 모델별 호환)",
+        desc: "1년마다 패킹만 직접 갈아도 E01 에러 예방과 갓 지은 밥맛이 그대로 살아납니다!",
+        url: "https://www.coupang.com/np/search?q=%EC%BF%A0%EC%BF%A0+%EB%B0%A5%EC%86%A5+%EA%B3%A0%EB%AC%B4%ED%8C%A8%ED%82%B9"
+      },
+      doorlock: {
+        badge: "🔋 도어락 방전 완벽 대비 세트",
+        title: "비상용 9V 사각 건전지 + 도어락 전용 누액방지 AA 건전지 대용량",
+        desc: "야간 열쇠수리공 출장비 7만 원 아끼는 집집마다 꼭 있어야 할 상비 건전지",
+        url: "https://www.coupang.com/np/search?q=9V+%EA%B1%B4%EC%A0%84%EC%A7%80+%EB%8F%84%EC%96%B4%EB%9D%BD+%EA%B1%B4%EC%A0%84%EC%A7%80"
+      }
+    };
+
     function initApp() {
       renderBrands();
       renderCodes();
@@ -738,6 +835,28 @@
       initAppliances();
       calcElectricity();
       updateBoilerPrescription();
+      fetchVisitorCounts();
+    }
+
+    async function fetchVisitorCounts() {
+      try {
+        const d = new Date();
+        const dayKey = `day-${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+        const [resTotal, resToday] = await Promise.all([
+          fetch("https://abacus.jasoncameron.dev/hit/hojun5-home-fix-korea/visits"),
+          fetch(`https://abacus.jasoncameron.dev/hit/hojun5-home-fix-korea/${dayKey}`)
+        ]);
+        if (resTotal.ok) {
+          const dataTotal = await resTotal.json();
+          document.getElementById("totalVisitors").textContent = (dataTotal.value || 1).toLocaleString();
+        }
+        if (resToday.ok) {
+          const dataToday = await resToday.json();
+          document.getElementById("todayVisitors").textContent = (dataToday.value || 1).toLocaleString();
+        }
+      } catch (e) {
+        console.log("Visitor counter fallback");
+      }
     }
 
     function switchTab(tabIdx) {
@@ -808,6 +927,12 @@
       document.getElementById("resPartTip").textContent = data.partTip;
       document.getElementById("resTelLink").href = `tel:${brandInfo.tel}`;
       document.getElementById("resTelText").textContent = `📞 ${brandInfo.name} AS ${brandInfo.tel}`;
+
+      const adInfo = BRAND_ADS[currentBrand] || BRAND_ADS.navien;
+      document.getElementById("adBadge").textContent = adInfo.badge;
+      document.getElementById("adTitle").textContent = adInfo.title;
+      document.getElementById("adDesc").textContent = adInfo.desc;
+      document.getElementById("adLink").href = adInfo.url;
     }
 
     function toggleResetTimer() {
